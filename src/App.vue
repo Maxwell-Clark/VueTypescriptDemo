@@ -1,8 +1,25 @@
 <template>
   <div id="app">
-    <nav>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/dashboard">DashBoard </router-link>
+      <router-link to="/table">Table</router-link>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active m-3">
+            <router-link lass="nav-link" to="/">Home</router-link>
+          </li>
+          <li class="nav-item m-3">
+            <router-link to="/dashboard">DashBoard </router-link>
+          </li>
+          <li class="nav-item m-3">
+            <router-link to="/table">Table</router-link>
+          </li>
+        </ul>
+      </div>
     </nav>
     <router-view />
   </div>
@@ -25,7 +42,7 @@ nav {
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #5bc0de;
     }
   }
 }
