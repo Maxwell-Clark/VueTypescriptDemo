@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[aria-current=page] {
+  @apply bg-sky-400 text-white
+}
